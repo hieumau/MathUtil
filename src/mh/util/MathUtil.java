@@ -12,6 +12,9 @@ package mh.util;
 public class MathUtil {
     public static long computeFactorial(int n) {
         long result = 1;
+        if (n < 0 || n > 15) {
+            throw new IllegalArgumentException("Invalid arg: n must be >= 0 & <= 15");
+        }
         for (int i = 1; i <= n; i++){
             result *= i;
         }            
