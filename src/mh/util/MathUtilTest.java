@@ -18,6 +18,6 @@ public class MathUtilTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testFalseCase() {
-        MathUtil.computeFactorial(-2);
+        assertEquals(MathUtil.computeFactorial(-2), 1);
     }
 }
